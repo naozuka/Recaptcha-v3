@@ -3,7 +3,7 @@ unit recaptcha3;
 interface
 
 uses
-  SysUtils, System.Classes, DateUtils, uniGUIServer, uniGUIApplication, uniEdit, IdHTTP, IdSSLOpenSSL, IdMultipartFormData, DBXJSON, XSBuiltIns;
+  SysUtils, System.Classes, DateUtils, uniGUIServer, uniGUIApplication, uniEdit, IdHTTP, IdSSLOpenSSL, DBXJSON;
 
 type
   TSiteVerifyResponse = record
@@ -83,9 +83,9 @@ var
   SSL: TIdSSLIOHandlerSocketOpenSSL;
   Data: TStringList;
   Response: string;
-  tmpSuccess: string;
+  //tmpSuccess: string;
   tmpScore: string;
-  tmp : string;
+  //tmp : string;
 begin
   with Result do
   begin
